@@ -32,7 +32,7 @@ const HeroSection = () => {
             Dr. N. Vijayaraj
           </span>
           <span className="block text-gold text-lg md:text-2xl font-body font-medium mt-4">
-            M.A., M.L., M.Sc., MBA, M.Com, Ph.D.
+            Ph.D., ML, M.Com, MBA, M.Sc, MA
           </span>
         </h1>
 
