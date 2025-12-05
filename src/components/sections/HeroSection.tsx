@@ -19,7 +19,7 @@ const HeroSection = () => {
         <div className="animate-fade-up opacity-0 mb-6">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-gold/10 text-gold-light text-sm font-body">
             <Scale className="w-4 h-4" />
-            Bar Council Election 2024
+            Bar Council Election 2026
           </span>
         </div>
 
