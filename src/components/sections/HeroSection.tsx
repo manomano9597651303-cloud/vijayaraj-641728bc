@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Scale, Award, BookOpen } from "lucide-react";
+import drVijayarajPhoto from "@/assets/dr-vijayaraj.jpeg";
 
 const HeroSection = () => {
   return (
@@ -29,11 +30,12 @@ const HeroSection = () => {
             {/* Outer glow ring */}
             <div className="absolute inset-0 rounded-full bg-gradient-gold blur-md opacity-50" />
             {/* Photo container */}
-            <div className="relative w-40 h-40 md:w-52 md:h-52 rounded-full border-4 border-gold/50 overflow-hidden bg-primary/50 flex items-center justify-center shadow-elegant">
-              {/* Placeholder - replace src with actual photo */}
-              <div className="w-full h-full bg-gradient-to-b from-primary-foreground/20 to-primary/80 flex items-center justify-center">
-                <span className="text-6xl md:text-7xl font-display font-bold text-gold/60">NV</span>
-              </div>
+            <div className="relative w-40 h-40 md:w-52 md:h-52 rounded-full border-4 border-gold/50 overflow-hidden shadow-elegant">
+              <img 
+                src={drVijayarajPhoto} 
+                alt="Dr. N. Vijayaraj - Advocate" 
+                className="w-full h-full object-cover object-top"
+              />
             </div>
           </div>
         </div>
