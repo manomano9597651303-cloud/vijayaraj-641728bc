@@ -23,8 +23,23 @@ const HeroSection = () => {
           </span>
         </div>
 
+        {/* Profile Photo */}
+        <div className="animate-fade-up opacity-0 animation-delay-100 mb-8">
+          <div className="relative">
+            {/* Outer glow ring */}
+            <div className="absolute inset-0 rounded-full bg-gradient-gold blur-md opacity-50" />
+            {/* Photo container */}
+            <div className="relative w-40 h-40 md:w-52 md:h-52 rounded-full border-4 border-gold/50 overflow-hidden bg-primary/50 flex items-center justify-center shadow-elegant">
+              {/* Placeholder - replace src with actual photo */}
+              <div className="w-full h-full bg-gradient-to-b from-primary-foreground/20 to-primary/80 flex items-center justify-center">
+                <span className="text-6xl md:text-7xl font-display font-bold text-gold/60">NV</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Name & Title */}
-        <h1 className="animate-fade-up opacity-0 animation-delay-100 text-center">
+        <h1 className="animate-fade-up opacity-0 animation-delay-200 text-center">
           <span className="block text-gold-light text-lg md:text-xl font-body font-light tracking-widest uppercase mb-2">
             Advocate
           </span>
@@ -37,7 +52,7 @@ const HeroSection = () => {
         </h1>
 
         {/* Tagline */}
-        <p className="animate-fade-up opacity-0 animation-delay-200 text-center text-primary-foreground/80 text-lg md:text-xl font-body max-w-2xl mt-8 leading-relaxed">
+        <p className="animate-fade-up opacity-0 animation-delay-300 text-center text-primary-foreground/80 text-lg md:text-xl font-body max-w-2xl mt-8 leading-relaxed">
           28 Years of Dedicated Legal Service | Candidate for Member, Tamil Nadu & Puducherry Bar Council
         </p>
 
