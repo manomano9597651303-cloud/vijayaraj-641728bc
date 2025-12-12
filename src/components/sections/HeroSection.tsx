@@ -30,7 +30,7 @@ const HeroSection = () => {
             {/* Outer glow ring */}
             <div className="absolute inset-0 rounded-full bg-gradient-gold blur-md opacity-50" />
             {/* Photo container */}
-            <div className="relative w-40 h-40 md:w-52 md:h-52 rounded-full border-4 border-gold/50 overflow-hidden shadow-elegant">
+            <div className="relative w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full border-4 border-gold/50 overflow-hidden shadow-elegant">
               <img 
                 src={drVijayarajPhoto} 
                 alt="Dr. N. Vijayaraj - Advocate" 
