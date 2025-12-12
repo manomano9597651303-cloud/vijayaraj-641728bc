@@ -1,7 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Scale, Award, BookOpen } from "lucide-react";
-import drVijayarajPhoto from "@/assets/dr-vijayaraj.jpeg";
-import drVijayarajStanding from "@/assets/dr-vijayaraj-standing.jpeg";
 
 const HeroSection = () => {
   return (
@@ -27,19 +25,6 @@ const HeroSection = () => {
             </span>
           </div>
 
-          {/* Profile Photo - Mobile Only */}
-          <div className="animate-fade-up opacity-0 animation-delay-100 mb-8 lg:hidden">
-            <div className="relative">
-              <div className="absolute inset-0 rounded-full bg-gradient-gold blur-md opacity-50" />
-              <div className="relative w-56 h-56 md:w-72 md:h-72 rounded-full border-4 border-gold/50 overflow-hidden shadow-elegant">
-                <img 
-                  src={drVijayarajPhoto} 
-                  alt="Dr. N. Vijayaraj - Advocate" 
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-            </div>
-          </div>
 
           {/* Name & Title */}
           <h1 className="animate-fade-up opacity-0 animation-delay-200 text-center lg:text-left">
@@ -95,18 +80,6 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Right - Standing Photo (Desktop Only) */}
-        <div className="hidden lg:flex animate-fade-up opacity-0 animation-delay-200 lg:flex-1 justify-center lg:justify-end">
-          <div className="relative">
-            {/* Glow effect behind image */}
-            <div className="absolute inset-0 bg-gradient-gold blur-3xl opacity-20 scale-75" />
-            <img 
-              src={drVijayarajStanding} 
-              alt="Dr. N. Vijayaraj - Standing Portrait" 
-              className="relative max-h-[85vh] w-auto object-contain drop-shadow-2xl"
-            />
-          </div>
-        </div>
 
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
