@@ -14,72 +14,67 @@ const HeroSection = () => {
       {/* Gold accent line */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-gold" />
 
-      <div className="container relative z-10 flex flex-col lg:flex-row items-center justify-between min-h-screen py-20 px-4 gap-8">
-        {/* Left Content */}
-        <div className="flex flex-col items-center lg:items-start lg:flex-1">
-          {/* Badge */}
-          <div className="animate-fade-up opacity-0 mb-6">
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-gold/10 text-gold-light text-sm font-body">
-              <Scale className="w-4 h-4" />
-              Bar Council Election 2026
-            </span>
+      <div className="container relative z-10 flex flex-col items-center justify-center min-h-screen py-20 px-4">
+        {/* Badge */}
+        <div className="animate-fade-up opacity-0 mb-6">
+          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-gold/10 text-gold-light text-sm font-body">
+            <Scale className="w-4 h-4" />
+            Bar Council Election 2026
+          </span>
+        </div>
+
+        {/* Name & Title */}
+        <h1 className="animate-fade-up opacity-0 animation-delay-100 text-center">
+          <span className="block text-gold-light text-lg md:text-xl font-body font-light tracking-widest uppercase mb-2">
+            Advocate
+          </span>
+          <span className="block text-4xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground leading-tight">
+            Dr. N. Vijayaraj
+          </span>
+          <span className="block text-gold text-lg md:text-2xl font-body font-medium mt-4">
+            Ph.D., ML, M.Com, MBA, M.Sc, MA
+          </span>
+        </h1>
+
+        {/* Tagline */}
+        <p className="animate-fade-up opacity-0 animation-delay-200 text-center text-primary-foreground/80 text-lg md:text-xl font-body max-w-2xl mt-8 leading-relaxed">
+          28 Years of Dedicated Legal Service | Candidate for Member, Tamil Nadu & Puducherry Bar Council
+        </p>
+
+        {/* Stats */}
+        <div className="animate-fade-up opacity-0 animation-delay-300 grid grid-cols-3 gap-6 md:gap-12 mt-12">
+          <div className="text-center">
+            <div className="flex justify-center mb-2">
+              <Scale className="w-6 h-6 text-gold" />
+            </div>
+            <div className="text-3xl md:text-4xl font-display font-bold text-primary-foreground">28+</div>
+            <div className="text-sm text-primary-foreground/60 font-body">Years Practice</div>
           </div>
-
-
-          {/* Name & Title */}
-          <h1 className="animate-fade-up opacity-0 animation-delay-200 text-center lg:text-left">
-            <span className="block text-gold-light text-lg md:text-xl font-body font-light tracking-widest uppercase mb-2">
-              Advocate
-            </span>
-            <span className="block text-4xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground leading-tight">
-              Dr. N. Vijayaraj
-            </span>
-            <span className="block text-gold text-lg md:text-2xl font-body font-medium mt-4">
-              Ph.D., ML, M.Com, MBA, M.Sc, MA
-            </span>
-          </h1>
-
-          {/* Tagline */}
-          <p className="animate-fade-up opacity-0 animation-delay-300 text-center lg:text-left text-primary-foreground/80 text-lg md:text-xl font-body max-w-2xl mt-8 leading-relaxed">
-            28 Years of Dedicated Legal Service | Candidate for Member, Tamil Nadu & Puducherry Bar Council
-          </p>
-
-          {/* Stats */}
-          <div className="animate-fade-up opacity-0 animation-delay-300 grid grid-cols-3 gap-6 md:gap-12 mt-12">
-            <div className="text-center lg:text-left">
-              <div className="flex justify-center lg:justify-start mb-2">
-                <Scale className="w-6 h-6 text-gold" />
-              </div>
-              <div className="text-3xl md:text-4xl font-display font-bold text-primary-foreground">28+</div>
-              <div className="text-sm text-primary-foreground/60 font-body">Years Practice</div>
+          <div className="text-center">
+            <div className="flex justify-center mb-2">
+              <BookOpen className="w-6 h-6 text-gold" />
             </div>
-            <div className="text-center lg:text-left">
-              <div className="flex justify-center lg:justify-start mb-2">
-                <BookOpen className="w-6 h-6 text-gold" />
-              </div>
-              <div className="text-3xl md:text-4xl font-display font-bold text-primary-foreground">6</div>
-              <div className="text-sm text-primary-foreground/60 font-body">Law Books</div>
-            </div>
-            <div className="text-center lg:text-left">
-              <div className="flex justify-center lg:justify-start mb-2">
-                <Award className="w-6 h-6 text-gold" />
-              </div>
-              <div className="text-3xl md:text-4xl font-display font-bold text-primary-foreground">7</div>
-              <div className="text-sm text-primary-foreground/60 font-body">Degrees</div>
-            </div>
+            <div className="text-3xl md:text-4xl font-display font-bold text-primary-foreground">6</div>
+            <div className="text-sm text-primary-foreground/60 font-body">Law Books</div>
           </div>
-
-          {/* CTA Buttons */}
-          <div className="animate-fade-up opacity-0 animation-delay-400 flex flex-col sm:flex-row gap-4 mt-12">
-            <Button variant="hero" size="xl" asChild>
-              <a href="#contact">Support My Candidacy</a>
-            </Button>
-            <Button variant="heroOutline" size="xl" asChild>
-              <a href="#journey">My Journey</a>
-            </Button>
+          <div className="text-center">
+            <div className="flex justify-center mb-2">
+              <Award className="w-6 h-6 text-gold" />
+            </div>
+            <div className="text-3xl md:text-4xl font-display font-bold text-primary-foreground">7</div>
+            <div className="text-sm text-primary-foreground/60 font-body">Degrees</div>
           </div>
         </div>
 
+        {/* CTA Buttons */}
+        <div className="animate-fade-up opacity-0 animation-delay-400 flex flex-col sm:flex-row gap-4 mt-12">
+          <Button variant="hero" size="xl" asChild>
+            <a href="#contact">Support My Candidacy</a>
+          </Button>
+          <Button variant="heroOutline" size="xl" asChild>
+            <a href="#journey">My Journey</a>
+          </Button>
+        </div>
 
         {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
