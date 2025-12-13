@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Scale, Award, BookOpen } from "lucide-react";
+import drVijayarajPhoto from "@/assets/dr-vijayaraj.jpeg";
 
 const HeroSection = () => {
   return (
@@ -80,7 +81,6 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right side - Photo placeholder */}
           <div className="animate-fade-up opacity-0 animation-delay-200 order-1 lg:order-2 flex justify-center lg:justify-end">
             <div className="relative">
               {/* Decorative frame */}
@@ -88,14 +88,12 @@ const HeroSection = () => {
               <div className="absolute -inset-4 border-2 border-gold/20 rounded-lg transform -rotate-3" />
               
               {/* Photo container */}
-              <div className="relative w-64 h-80 md:w-80 md:h-96 lg:w-96 lg:h-[480px] bg-gradient-to-br from-gold/20 to-gold/5 rounded-lg border border-gold/30 overflow-hidden flex items-center justify-center">
-                <div className="text-center p-6">
-                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gold/20 flex items-center justify-center">
-                    <Scale className="w-10 h-10 text-gold/60" />
-                  </div>
-                  <p className="text-gold/60 font-body text-sm">Professional Photo</p>
-                  <p className="text-gold/40 font-body text-xs mt-1">Upload to replace</p>
-                </div>
+              <div className="relative w-64 h-80 md:w-80 md:h-96 lg:w-96 lg:h-[480px] rounded-lg border border-gold/30 overflow-hidden">
+                <img 
+                  src={drVijayarajPhoto} 
+                  alt="Dr. N. Vijayaraj - Advocate" 
+                  className="w-full h-full object-cover object-top"
+                />
               </div>
             </div>
           </div>
