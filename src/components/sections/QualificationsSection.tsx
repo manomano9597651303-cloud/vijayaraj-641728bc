@@ -1,12 +1,14 @@
 import { GraduationCap, Award, BookOpen, Medal } from "lucide-react";
 
 const degrees = [
-  { name: "Ph.D. in Law", institution: "Bharath University, Chennai" },
-  { name: "ML (Labour & Administrative Law)", institution: "Tamil Nadu Dr. Ambedkar Law University" },
+  { name: "MA (History)", institution: "Annamalai University" },
   { name: "M.Com", institution: "Alagappa University" },
   { name: "MBA (Labour Laws)", institution: "NIBM" },
+  { name: "ML (Labour & Administrative Law)", institution: "Tamil Nadu Dr. Ambedkar Law University" },
   { name: "M.Sc (Applied Psychology)", institution: "Annamalai University" },
-  { name: "MA (History)", institution: "Annamalai University" },
+  { name: "DLL (Diploma in Labour Law)", institution: "" },
+  { name: "DIRPM (Diploma in Industrial Relations & Personnel Management)", institution: "" },
+  { name: "Ph.D. in Law", institution: "Bharath University, Chennai" },
   { name: "BL", institution: "Dr. Ambedkar Govt. Law College, Chennai" },
 ];
 
@@ -93,12 +95,6 @@ const QualificationsSection = () => {
               ))}
             </div>
 
-            {/* Additional Info */}
-            <div className="mt-8 p-4 rounded-xl bg-gradient-hero text-primary-foreground">
-              <p className="font-body text-sm leading-relaxed">
-                <strong>Additional Diplomas:</strong> DLL (Diploma in Labour Law), DIRPM (Diploma in Industrial Relations & Personnel Management)
-              </p>
-            </div>
           </div>
         </div>
       </div>
