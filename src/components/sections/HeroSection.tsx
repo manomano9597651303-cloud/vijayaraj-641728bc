@@ -14,7 +14,7 @@ const HeroSection = () => {
       {/* Gold accent line */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-gold" />
 
-      <div className="container relative z-10 flex flex-col items-center justify-center min-h-screen py-20 px-4">
+      <div className="container relative z-10 flex flex-col items-center justify-center min-h-screen py-20 px-4 text-center mx-auto">
         {/* Badge */}
         <div className="animate-fade-up opacity-0 mb-6">
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-gold/10 text-gold-light text-sm font-body">
