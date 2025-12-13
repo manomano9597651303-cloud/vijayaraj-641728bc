@@ -14,66 +14,91 @@ const HeroSection = () => {
       {/* Gold accent line */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-gold" />
 
-      <div className="container relative z-10 flex flex-col items-center justify-center min-h-screen py-20 px-4 text-center mx-auto">
-        {/* Badge */}
-        <div className="animate-fade-up opacity-0 mb-6">
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-gold/10 text-gold-light text-sm font-body">
-            <Scale className="w-4 h-4" />
-            Bar Council Election 2026
-          </span>
-        </div>
-
-        {/* Name & Title */}
-        <h1 className="animate-fade-up opacity-0 animation-delay-100 text-center">
-          <span className="block text-gold-light text-lg md:text-xl font-body font-light tracking-widest uppercase mb-2">
-            Advocate
-          </span>
-          <span className="block text-4xl md:text-6xl lg:text-7xl font-display font-bold text-primary-foreground leading-tight">
-            Dr. N. Vijayaraj
-          </span>
-          <span className="block text-gold text-lg md:text-2xl font-body font-medium mt-4">
-            Ph.D., ML, M.Com, MBA, M.Sc, MA
-          </span>
-        </h1>
-
-        {/* Tagline */}
-        <p className="animate-fade-up opacity-0 animation-delay-200 text-center text-primary-foreground/80 text-lg md:text-xl font-body max-w-2xl mt-8 leading-relaxed">
-          28 Years of Dedicated Legal Service | Candidate for Member, Tamil Nadu & Puducherry Bar Council
-        </p>
-
-        {/* Stats */}
-        <div className="animate-fade-up opacity-0 animation-delay-300 grid grid-cols-3 gap-6 md:gap-12 mt-12">
-          <div className="text-center">
-            <div className="flex justify-center mb-2">
-              <Scale className="w-6 h-6 text-gold" />
+      <div className="container relative z-10 flex items-center justify-center min-h-screen py-20 px-4 mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full max-w-6xl">
+          {/* Left side - Text content */}
+          <div className="text-center lg:text-left order-2 lg:order-1">
+            {/* Badge */}
+            <div className="animate-fade-up opacity-0 mb-6">
+              <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 bg-gold/10 text-gold-light text-sm font-body">
+                <Scale className="w-4 h-4" />
+                Bar Council Election 2026
+              </span>
             </div>
-            <div className="text-3xl md:text-4xl font-display font-bold text-primary-foreground">28+</div>
-            <div className="text-sm text-primary-foreground/60 font-body">Years Practice</div>
-          </div>
-          <div className="text-center">
-            <div className="flex justify-center mb-2">
-              <BookOpen className="w-6 h-6 text-gold" />
-            </div>
-            <div className="text-3xl md:text-4xl font-display font-bold text-primary-foreground">6</div>
-            <div className="text-sm text-primary-foreground/60 font-body">Law Books</div>
-          </div>
-          <div className="text-center">
-            <div className="flex justify-center mb-2">
-              <Award className="w-6 h-6 text-gold" />
-            </div>
-            <div className="text-3xl md:text-4xl font-display font-bold text-primary-foreground">7</div>
-            <div className="text-sm text-primary-foreground/60 font-body">Degrees</div>
-          </div>
-        </div>
 
-        {/* CTA Buttons */}
-        <div className="animate-fade-up opacity-0 animation-delay-400 flex flex-col sm:flex-row gap-4 mt-12">
-          <Button variant="hero" size="xl" asChild>
-            <a href="#contact">Support My Candidacy</a>
-          </Button>
-          <Button variant="heroOutline" size="xl" asChild>
-            <a href="#journey">My Journey</a>
-          </Button>
+            {/* Name & Title */}
+            <h1 className="animate-fade-up opacity-0 animation-delay-100">
+              <span className="block text-gold-light text-lg md:text-xl font-body font-light tracking-widest uppercase mb-2">
+                Advocate
+              </span>
+              <span className="block text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary-foreground leading-tight">
+                Dr. N. Vijayaraj
+              </span>
+              <span className="block text-gold text-lg md:text-xl font-body font-medium mt-4">
+                Ph.D., ML, M.Com, MBA, M.Sc, MA
+              </span>
+            </h1>
+
+            {/* Tagline */}
+            <p className="animate-fade-up opacity-0 animation-delay-200 text-primary-foreground/80 text-lg md:text-xl font-body max-w-xl mt-8 leading-relaxed mx-auto lg:mx-0">
+              28 Years of Dedicated Legal Service | Candidate for Member, Tamil Nadu & Puducherry Bar Council
+            </p>
+
+            {/* Stats */}
+            <div className="animate-fade-up opacity-0 animation-delay-300 grid grid-cols-3 gap-6 mt-10 max-w-md mx-auto lg:mx-0">
+              <div className="text-center lg:text-left">
+                <div className="flex justify-center lg:justify-start mb-2">
+                  <Scale className="w-5 h-5 text-gold" />
+                </div>
+                <div className="text-2xl md:text-3xl font-display font-bold text-primary-foreground">28+</div>
+                <div className="text-xs text-primary-foreground/60 font-body">Years Practice</div>
+              </div>
+              <div className="text-center lg:text-left">
+                <div className="flex justify-center lg:justify-start mb-2">
+                  <BookOpen className="w-5 h-5 text-gold" />
+                </div>
+                <div className="text-2xl md:text-3xl font-display font-bold text-primary-foreground">6</div>
+                <div className="text-xs text-primary-foreground/60 font-body">Law Books</div>
+              </div>
+              <div className="text-center lg:text-left">
+                <div className="flex justify-center lg:justify-start mb-2">
+                  <Award className="w-5 h-5 text-gold" />
+                </div>
+                <div className="text-2xl md:text-3xl font-display font-bold text-primary-foreground">7</div>
+                <div className="text-xs text-primary-foreground/60 font-body">Degrees</div>
+              </div>
+            </div>
+
+            {/* CTA Buttons */}
+            <div className="animate-fade-up opacity-0 animation-delay-400 flex flex-col sm:flex-row gap-4 mt-10 justify-center lg:justify-start">
+              <Button variant="hero" size="xl" asChild>
+                <a href="#contact">Support My Candidacy</a>
+              </Button>
+              <Button variant="heroOutline" size="xl" asChild>
+                <a href="#journey">My Journey</a>
+              </Button>
+            </div>
+          </div>
+
+          {/* Right side - Photo placeholder */}
+          <div className="animate-fade-up opacity-0 animation-delay-200 order-1 lg:order-2 flex justify-center lg:justify-end">
+            <div className="relative">
+              {/* Decorative frame */}
+              <div className="absolute -inset-4 border-2 border-gold/30 rounded-lg transform rotate-3" />
+              <div className="absolute -inset-4 border-2 border-gold/20 rounded-lg transform -rotate-3" />
+              
+              {/* Photo container */}
+              <div className="relative w-64 h-80 md:w-80 md:h-96 lg:w-96 lg:h-[480px] bg-gradient-to-br from-gold/20 to-gold/5 rounded-lg border border-gold/30 overflow-hidden flex items-center justify-center">
+                <div className="text-center p-6">
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-gold/20 flex items-center justify-center">
+                    <Scale className="w-10 h-10 text-gold/60" />
+                  </div>
+                  <p className="text-gold/60 font-body text-sm">Professional Photo</p>
+                  <p className="text-gold/40 font-body text-xs mt-1">Upload to replace</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Scroll indicator */}
