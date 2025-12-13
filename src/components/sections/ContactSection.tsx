@@ -33,25 +33,25 @@ const ContactSection = () => {
           {/* Contact Cards */}
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             <a
-              href="tel:+919840123456"
+              href="tel:+919884442080"
               className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6 border border-gold/20 hover:bg-primary-foreground/20 transition-all duration-300 group"
             >
               <div className="w-12 h-12 rounded-full bg-gradient-gold flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <Phone className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-lg font-display font-semibold text-primary-foreground mb-1">Phone</h3>
-              <p className="text-gold-light font-body">+91 98401 23456</p>
+              <p className="text-gold-light font-body">+91 98844 42080</p>
             </a>
 
             <a
-              href="mailto:dr.vijayaraj@advocate.com"
+              href="mailto:vijaycourt@gmail.com"
               className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6 border border-gold/20 hover:bg-primary-foreground/20 transition-all duration-300 group"
             >
               <div className="w-12 h-12 rounded-full bg-gradient-gold flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <Mail className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-lg font-display font-semibold text-primary-foreground mb-1">Email</h3>
-              <p className="text-gold-light font-body text-sm">dr.vijayaraj@advocate.com</p>
+              <p className="text-gold-light font-body text-sm">vijaycourt@gmail.com</p>
             </a>
 
             <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6 border border-gold/20">
@@ -66,13 +66,13 @@ const ContactSection = () => {
           {/* CTA */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="xl" asChild>
-              <a href="tel:+919840123456">
+              <a href="tel:+919884442080">
                 <Phone className="w-5 h-5" />
                 Call Now
               </a>
             </Button>
             <Button variant="heroOutline" size="xl" asChild>
-              <a href="mailto:dr.vijayaraj@advocate.com">
+              <a href="mailto:vijaycourt@gmail.com">
                 <Mail className="w-5 h-5" />
                 Send Email
               </a>
