@@ -4,13 +4,16 @@ import drVijayarajPhoto from "@/assets/dr-vijayaraj.jpeg";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen bg-gradient-hero overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-        }} />
-      </div>
+    <section className="relative min-h-screen overflow-hidden">
+      {/* Background Image - Chennai High Court */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: `url("https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070&auto=format&fit=crop")`,
+        }}
+      />
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-navy/85" />
 
       {/* Gold accent line */}
       <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-gold" />
@@ -94,6 +97,41 @@ const HeroSection = () => {
                   alt="Dr. N. Vijayaraj - Advocate" 
                   className="w-full h-full object-cover object-top"
                 />
+              </div>
+
+              {/* NVR Law Associates Card */}
+              <div className="absolute -bottom-6 -left-6 bg-navy/95 backdrop-blur-sm border border-gold/30 rounded-lg p-4 shadow-xl">
+                <h3 className="text-gold font-display font-bold text-lg mb-2">NVR LAW ASSOCIATES</h3>
+                <ul className="text-primary-foreground/90 text-xs font-body space-y-1">
+                  <li className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 bg-gold rounded-full"></span>
+                    ADVOCATES
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 bg-gold rounded-full"></span>
+                    SOLICITORS
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 bg-gold rounded-full"></span>
+                    ATTORNEYS
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 bg-gold rounded-full"></span>
+                    NOTARY PUBLIC
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 bg-gold rounded-full"></span>
+                    COMMISSIONER OF OATHS
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 bg-gold rounded-full"></span>
+                    MEDIATORS
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 bg-gold rounded-full"></span>
+                    ARBITRATORS
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
