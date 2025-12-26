@@ -33,14 +33,14 @@ const ContactSection = () => {
           {/* Contact Cards */}
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             <a
-              href="tel:+919597651303"
+              href="tel:+919884442080"
               className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6 border border-gold/20 hover:bg-primary-foreground/20 transition-all duration-300 group"
             >
               <div className="w-12 h-12 rounded-full bg-gradient-gold flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                 <Phone className="w-6 h-6 text-primary" />
               </div>
               <h3 className="text-lg font-display font-semibold text-primary-foreground mb-1">Phone</h3>
-              <p className="text-gold-light font-body">+91 95976 51303</p>
+              <p className="text-gold-light font-body">+91 98844 42080</p>
             </a>
 
             <a
@@ -66,7 +66,7 @@ const ContactSection = () => {
           {/* CTA */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="xl" asChild>
-              <a href="tel:+919597651303">
+              <a href="tel:+919884442080">
                 <Phone className="w-5 h-5" />
                 Call Now
               </a>
